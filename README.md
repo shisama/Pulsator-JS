@@ -1,7 +1,7 @@
-# Pulsator CSS
+# Pulsator JS
 Pulse animation with JavaScript inspired by [Pulsator](https://github.com/shu223/Pulsator)
 
-![](capture/pulsator-css.gif)
+![](capture/pulsator.gif)
 
 
 # Usage
