@@ -1,4 +1,4 @@
-import Pulsator from "../pulsator";
+import Pulsator from "../pulsator.js";
 
 const el = document.createElement("div")
 const target = new Pulsator(el);
