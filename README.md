@@ -10,23 +10,6 @@ Pulse animation with JavaScript inspired by [Pulsator](https://github.com/shu223
 + Download from GitHub
   - [pulsator.js](pulsator.js)
 
-+ put into your project
-+ load in html
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Demo</title>
-  </head>
-  <body>
-    click anywhere!
-    <script type="module" src="../pulsator.js"></script>
-    <script type="module" src="demo.js"></script>
-  </body>
-</html>
-``` 
 
 import pulsator.js in your JavaScript files
 

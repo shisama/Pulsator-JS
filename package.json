@@ -1,0 +1,24 @@
+{
+  "name": "pulsator",
+  "version": "0.0.1",
+  "description": "Pulse animation with JavaScript.",
+  "main": "pulsator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shisama/Pulsator-JS.git"
+  },
+  "keywords": [
+    "pulsator",
+    "pulse",
+    "animation"
+  ],
+  "author": "Masashi Hirano",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shisama/Pulsator-JS/issues"
+  },
+  "homepage": "https://github.com/shisama/Pulsator-JS#readme"
+}
