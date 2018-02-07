@@ -1,5 +1,7 @@
 export default class Pulsator {
-  constructor(target, options) {
+  constructor(parent, options) {
+    this.element = document.createElement("div");
+    parent.appendChild(this.element);
     const style = {
       display: "none",
       width: "15px",
@@ -9,12 +11,8 @@ export default class Pulsator {
       background: "red",
       boxShadow: "0 0 0 rgba(255,0,0, 0.4)"
     };
-    Object.assign(target.style, style, options);
-    this.target = target;
-  }
-
-  start() {
-    this.target.animate([
+    Object.assign(this.element.style, style, options);
+    this.animation = this.element.animate([
         {
           boxShadow: "0 0 0 0 rgba(255,0,0, 1)"
         },
@@ -25,6 +23,24 @@ export default class Pulsator {
       {
         duration: 1500,
         iterations: "Infinity"
-      })
+      });
+  }
+
+  start() {
+    this.element.style.display = "block";
+    this.animation.play();
+  }
+
+  stop() {
+    this.animation.cancel();
+    this.element.style.display = "none";
+  }
+
+  pause() {
+    this.animation.pause();
+  }
+
+  getElement() {
+    return this.element;
   }
 }

@@ -11,23 +11,60 @@ Pulse animation with JavaScript inspired by [Pulsator](https://github.com/shu223
   - [pulsator.js](pulsator.js)
 
 
-import pulsator.js in your JavaScript files
++ import pulsator.js in your JavaScript files
 
+`import Pulsator from "pulsator"`
+
++ create Pulsator instance with arguments
+  * element: required. parent element of pulse element
+  * options: object for changing pulsator's style
+  
+`const pulsator = new Pulsator(element)`
+
+example(below code is implement of demo page)
 ```js
-import Pulsator from "../pulsator.js";
+import Pulsator from "pulsator.js";
 
-const el = document.createElement("div")
-const target = new Pulsator(el);
+const options = {
+  width: "20px",
+  height: "20px"
+};
+const pulsator = new Pulsator(document.body, options);
+const el = pulsator.getElement();
 
-document.body.appendChild(el);
+window.onclick = function(event) {
+  el.style.marginLeft = event.pageX - 15 + "px";
+  el.style.marginTop = event.pageY - 120 + "px";
+  pulsator.start();
+};
 
-window.onclick = function (event) {
-  el.style.display = "block";
-  el.style.marginLeft = event.pageX + "px";
-  el.style.marginTop = event.pageY + "px";
-  target.start();
+el.onmouseover = function(event) {
+  pulsator.pause();
+};
+
+el.onmouseleave = function(event) {
+  pulsator.start();
+};
+
+window.onkeydown = function(event) {
+  if (event.key === "Escape") {
+    pulsator.stop();
+  }
 };
 ```
+
+# API
+## start()
+start pulse animation
+
+## stop()
+stop pulse animation
+
+## pause()
+pause pulse animation
+
+## getElement()
+get pulse element
 
 # LICENSE
 This project is licensed under the terms of the MIT license
