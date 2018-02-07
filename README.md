@@ -3,6 +3,8 @@ Pulse animation with JavaScript inspired by [Pulsator](https://github.com/shu223
 
 ![](capture/pulsator.gif)
 
+##  [Demo](https://shisama.github.io/Pulsator-JS/demo/)
+
 
 # Usage
 + Download from GitHub
