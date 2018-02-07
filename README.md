@@ -7,21 +7,20 @@ Pulse animation with JavaScript inspired by [Pulsator](https://github.com/shu223
 
 
 # Usage
-+ Download from GitHub
-  - [pulsator.js](pulsator.js)
-
++ Install
+`npm install pulsator --save`
 
 + import pulsator.js in your JavaScript files
 
-`import Pulsator from "pulsator"`
+  `import Pulsator from "pulsator"`
 
 + create Pulsator instance with arguments
   * element: required. parent element of pulse element
   * options: object for changing pulsator's style
   
-`const pulsator = new Pulsator(element)`
+  `const pulsator = new Pulsator(element, options)`
 
-example(below code is implement of demo page)
+example(below is a part of [Demo](https://shisama.github.io/Pulsator-JS/demo/))
 ```js
 import Pulsator from "pulsator.js";
 
