@@ -22,7 +22,7 @@ Pulse animation with Web Animations API inspired by [Pulsator](https://github.co
 
 example(below is a part of [Demo](https://shisama.github.io/Pulsator-JS/demo/))
 ```js
-import Pulsator from "pulsator.js";
+import Pulsator from "pulsator";
 
 const options = {
   width: "20px",
