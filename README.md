@@ -67,5 +67,11 @@ pause pulse animation
 ## getElement()
 get pulse element
 
+# Browser compatibility
+* Chrome 36
+* Firefox 48
+
+see [Web Animations API Browser compatibility](https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API#Browser_compatibility)!
+
 # LICENSE
 This project is licensed under the terms of the MIT license
