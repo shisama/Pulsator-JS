@@ -7,7 +7,7 @@ const options = {
 const parent = document.querySelector(".demo-space");
 const pulsator = new Pulsator(parent, options);
 const el = pulsator.getElement();
-  el.style.position = "absolute";
+el.style.position = "absolute";
 
 parent.addEventListener("click", function(event) {
   el.style.left = (event.pageX - 10 /* 10px is the half of pulsator width */) + "px";
