@@ -27,4 +27,7 @@ window.onkeydown = function(event) {
   if (event.key === "Escape") {
     pulsator.stop();
   }
+  if (event.key === "Enter") {
+    pulsator.reverse();
+  }
 };

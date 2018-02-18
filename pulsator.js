@@ -12,18 +12,15 @@ export default class Pulsator {
       boxShadow: "0 0 0 rgba(255,0,0, 0.4)"
     };
     Object.assign(this.element.style, style, options);
-    this.animation = this.element.animate([
-        {
-          boxShadow: "0 0 0 0 rgba(255,0,0, 1)"
-        },
-        {
-          boxShadow: "0 0 0 20px rgba(255,0,0, 0)"
-        }
-      ],
-      {
-        duration: 1500,
-        iterations: "Infinity"
-      });
+
+
+    this.animation = this.element.animate({
+      boxShadow: ["0 0 0 0 rgba(255,0,0, 1)", "0 0 0 20px rgba(255,0,0, 0)"]
+    }, {
+      duration: 1500,
+      iterations: "Infinity"
+    });
+    this.animation.cancel();
   }
 
   start() {
@@ -38,6 +35,10 @@ export default class Pulsator {
 
   pause() {
     this.animation.pause();
+  }
+
+  reverse() {
+    this.animation.reverse();
   }
 
   getElement() {

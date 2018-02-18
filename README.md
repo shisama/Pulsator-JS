@@ -51,6 +51,9 @@ window.onkeydown = function(event) {
   if (event.key === "Escape") {
     pulsator.stop();
   }
+  if (event.key === "Enter") {
+    pulsator.reverse();
+  }
 };
 ```
 
@@ -63,6 +66,9 @@ stop pulse animation
 
 ## pause()
 pause pulse animation
+
+## reverse()
+reverse pulse animation
 
 ## getElement()
 get pulse element
