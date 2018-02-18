@@ -1,6 +1,6 @@
 {
   "name": "pulsator",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Pulse animation with JavaScript.",
   "main": "pulsator.js",
   "scripts": {
