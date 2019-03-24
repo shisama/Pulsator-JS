@@ -1,5 +1,7 @@
 export default class Pulsator {
-  constructor(parent, options) {
+  private element: HTMLElement;
+  private animation: Animation;
+  constructor(parent: Element, options: unknown) {
     this.element = document.createElement("div");
     parent.appendChild(this.element);
     const style = {
@@ -15,10 +17,13 @@ export default class Pulsator {
 
 
     this.animation = this.element.animate({
-      boxShadow: ["0 0 0 0 rgba(255,0,0, 1)", "0 0 0 20px rgba(255,0,0, 0)"]
+      "boxShadow": [
+        "0 0 0 0 rgba(255,0,0, 1)",
+        "0 0 0 20px rgba(255,0,0, 0)"
+      ]
     }, {
       duration: 1500,
-      iterations: "Infinity"
+      iterations: Infinity
     });
     this.animation.cancel();
   }
