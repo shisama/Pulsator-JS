@@ -2,10 +2,13 @@
   "name": "pulsator",
   "version": "0.2.1",
   "description": "Pulse animation with JavaScript.",
-  "main": "pulsator.js",
+  "main": "lib/pulsator.js",
+  "types": "lib/pulsator.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:demo": "parcel build demo/demo.js -d demo -o demo.bundle.js"
+    "build": "rimraf lib && tsc",
+    "build:demo": "parcel build demo/demo.js -d demo -o demo.bundle.js",
+    "build:all": "npm run build && npm run build:demo"
   },
   "repository": {
     "type": "git",
@@ -23,6 +26,8 @@
   },
   "homepage": "https://github.com/shisama/Pulsator-JS#readme",
   "devDependencies": {
-    "parcel-bundler": "^1.12.3"
+    "parcel-bundler": "^1.12.3",
+    "rimraf": "^2.6.3",
+    "typescript": "^3.3.4000"
   }
 }

@@ -2,5 +2,7 @@
 .cache
 capture
 demo
+src
 .gitignore
 renovate.json
+tsconfig.json
