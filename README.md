@@ -77,7 +77,7 @@ get pulse element
 * Chrome 36
 * Firefox 48
 
-see [Web Animations API Browser compatibility](https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API#Browser_compatibility)!
+see [Web Animations API Browser compatibility](https://caniuse.com/web-animation)!
 
 # LICENSE
 This project is licensed under the terms of the MIT license
