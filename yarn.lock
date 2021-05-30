@@ -261,6 +261,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@typescript-eslint/parser@npm:^4.25.0":
+  version: 4.25.0
+  resolution: "@typescript-eslint/parser@npm:4.25.0"
+  dependencies:
+    "@typescript-eslint/scope-manager": 4.25.0
+    "@typescript-eslint/types": 4.25.0
+    "@typescript-eslint/typescript-estree": 4.25.0
+    debug: ^4.1.1
+  peerDependencies:
+    eslint: ^5.0.0 || ^6.0.0 || ^7.0.0
+  peerDependenciesMeta:
+    typescript:
+      optional: true
+  checksum: deab7d5edb21e267bc5db41dbfcd7cce5c779d639c5cbc1f2ecc2e9fc08a9d35b66697f090d01d17d2e82dd75ebe0385aef1ed90916ae5051b5541453d9407fa
+  languageName: node
+  linkType: hard
+
 "@typescript-eslint/scope-manager@npm:4.25.0":
   version: 4.25.0
   resolution: "@typescript-eslint/scope-manager@npm:4.25.0"
@@ -5251,6 +5268,7 @@ fsevents@^1.2.7:
   resolution: "my-webpack-project@workspace:."
   dependencies:
     "@typescript-eslint/eslint-plugin": 4.25.0
+    "@typescript-eslint/parser": ^4.25.0
     "@webpack-cli/generators": ^2.1.0
     eslint: 7.27.0
     eslint-config-prettier: 8.3.0
