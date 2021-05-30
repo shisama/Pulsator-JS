@@ -1,5 +1,5 @@
 {
-  "name": "Pulsator-JS",
+  "name": "pulsator",
   "version": "2.0.1",
   "description": "Pulse animation with Web Animations API inspired by Pulsator",
   "main": "lib/pulsator.js",
