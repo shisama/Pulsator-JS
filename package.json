@@ -1,6 +1,6 @@
 {
   "name": "my-webpack-project",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "My webpack project",
   "main": "lib/pulsator.js",
   "types": "lib/pulsator.d.ts",
@@ -12,7 +12,8 @@
     "build:demo": "webpack",
     "clean": "rimraf lib",
     "dev": "webpack serve",
-    "release": "standard-version"
+    "prepack": "run-s build",
+    "prerelease": "standard-version"
   },
   "repository": {
     "type": "git",
