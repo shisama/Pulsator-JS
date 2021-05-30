@@ -1,4 +1,4 @@
-import Pulsator from "../lib/pulsator.js";
+import Pulsator from "../src/pulsator";
 
 const options = {
   width: "20px",
