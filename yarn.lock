@@ -550,6 +550,34 @@ __metadata:
   languageName: node
   linkType: hard
 
+"Pulsator-JS@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "Pulsator-JS@workspace:."
+  dependencies:
+    "@typescript-eslint/eslint-plugin": 4.25.0
+    "@typescript-eslint/parser": ^4.25.0
+    "@webpack-cli/generators": ^2.1.0
+    eslint: 7.27.0
+    eslint-config-prettier: 8.3.0
+    eslint-config-standard: 16.0.3
+    eslint-plugin-import: 2.23.3
+    eslint-plugin-node: 11.1.0
+    eslint-plugin-prettier: 3.4.0
+    eslint-plugin-promise: 5.1.0
+    eslint-plugin-standard: 4.1.0
+    npm-run-all: ^4.1.5
+    prettier: 2.3.0
+    rimraf: 3.0.2
+    standard-version: ^9.3.0
+    ts-loader: ^9.2.2
+    typescript: 4.2.4
+    webpack: ^5.38.1
+    webpack-cli: ^4.7.0
+    webpack-dev-server: ^3.11.2
+    yarn: ^2.0.0-rc.27
+  languageName: unknown
+  linkType: soft
+
 "abbrev@npm:1":
   version: 1.1.1
   resolution: "abbrev@npm:1.1.1"
@@ -5262,34 +5290,6 @@ fsevents@^1.2.7:
   checksum: 315c40f463ec31deee54c5b8779207feb6b63dd4c58fe0f84ad46abdd6dac1ada578d53efde4a47b0ae4d29d453d35bb39ecdd98ee9ebf538929039a3a9945df
   languageName: node
   linkType: hard
-
-"my-webpack-project@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "my-webpack-project@workspace:."
-  dependencies:
-    "@typescript-eslint/eslint-plugin": 4.25.0
-    "@typescript-eslint/parser": ^4.25.0
-    "@webpack-cli/generators": ^2.1.0
-    eslint: 7.27.0
-    eslint-config-prettier: 8.3.0
-    eslint-config-standard: 16.0.3
-    eslint-plugin-import: 2.23.3
-    eslint-plugin-node: 11.1.0
-    eslint-plugin-prettier: 3.4.0
-    eslint-plugin-promise: 5.1.0
-    eslint-plugin-standard: 4.1.0
-    npm-run-all: ^4.1.5
-    prettier: 2.3.0
-    rimraf: 3.0.2
-    standard-version: ^9.3.0
-    ts-loader: ^9.2.2
-    typescript: 4.2.4
-    webpack: ^5.38.1
-    webpack-cli: ^4.7.0
-    webpack-dev-server: ^3.11.2
-    yarn: ^2.0.0-rc.27
-  languageName: unknown
-  linkType: soft
 
 "nan@npm:^2.12.1":
   version: 2.14.2
