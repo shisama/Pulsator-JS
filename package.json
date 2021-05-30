@@ -1,15 +1,15 @@
 {
-  "name": "pulsator",
-  "version": "0.2.4",
-  "description": "Pulse animation with JavaScript.",
+  "name": "my-webpack-project",
+  "version": "1.0.0",
+  "description": "My webpack project",
   "main": "lib/pulsator.js",
   "types": "lib/pulsator.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint ./src/*.ts",
-    "build": "rimraf lib && tsc",
-    "build:demo": "parcel build demo/demo.js -d demo -o demo.bundle.js",
-    "build:all": "npm run build && npm run build:demo",
+    "build": "rimraf lib && npm run build:cjs && build:demo",
+    "build:cjs": "tsc",
+    "build:demo": "webpack",
     "release": "standard-version"
   },
   "repository": {
@@ -29,6 +29,7 @@
   "homepage": "https://github.com/shisama/Pulsator-JS#readme",
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "4.25.0",
+    "@webpack-cli/generators": "^2.1.0",
     "eslint": "7.27.0",
     "eslint-config-prettier": "8.3.0",
     "eslint-config-standard": "16.0.3",
@@ -37,10 +38,16 @@
     "eslint-plugin-prettier": "3.4.0",
     "eslint-plugin-promise": "5.1.0",
     "eslint-plugin-standard": "4.1.0",
-    "parcel-bundler": "1.12.5",
     "prettier": "2.3.0",
     "rimraf": "3.0.2",
     "standard-version": "^9.3.0",
-    "typescript": "4.2.4"
+    "ts-loader": "^9.2.2",
+    "typescript": "4.2.4",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "yarn": "^2.0.0-rc.27"
   }
 }
