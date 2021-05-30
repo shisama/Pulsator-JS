@@ -24,6 +24,13 @@
     "pulse",
     "animation"
   ],
+  "files": [
+    "package.json",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE",
+    "lib"
+  ],
   "author": "Masashi Hirano",
   "license": "MIT",
   "bugs": {
