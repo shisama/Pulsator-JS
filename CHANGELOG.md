@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.3](https://github.com/shisama/Pulsator-JS/compare/v2.0.2...v2.0.3) (2021-05-30)
+
+
+### Bug Fixes
+
+* make options arg optional ([9c83d62](https://github.com/shisama/Pulsator-JS/commit/9c83d62ea18e33f8a29a3e94d6b340c8aa7b538a))
+
 ### [2.0.2](https://github.com/shisama/Pulsator-JS/compare/v2.0.1...v2.0.2) (2021-05-30)
 
 
