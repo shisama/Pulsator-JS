@@ -11,17 +11,17 @@ export default class Pulsator {
       borderRadius: "50%",
       borderColor: "red",
       background: "red",
-      boxShadow: "0 0 0 rgba(255,0,0, 0.4)"
+      boxShadow: "0 0 0 rgba(255,0,0, 0.4)",
     };
     Object.assign(this.element.style, style, options);
 
     this.animation = this.element.animate(
       {
-        boxShadow: ["0 0 0 0 rgba(255,0,0, 1)", "0 0 0 20px rgba(255,0,0, 0)"]
+        boxShadow: ["0 0 0 0 rgba(255,0,0, 1)", "0 0 0 20px rgba(255,0,0, 0)"],
       },
       {
         duration: 1500,
-        iterations: Infinity
+        iterations: Infinity,
       }
     );
     this.animation.cancel();
