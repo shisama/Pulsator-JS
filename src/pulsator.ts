@@ -1,7 +1,7 @@
 export default class Pulsator {
   private element: HTMLElement;
   private animation: Animation;
-  constructor(parent: Element, options: unknown) {
+  constructor(parent: Element, options?: unknown) {
     this.element = document.createElement("div");
     parent.appendChild(this.element);
     const style = {
