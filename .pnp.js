@@ -51,7 +51,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["npm-run-all", "npm:4.1.5"],
             ["prettier", "npm:2.3.0"],
             ["rimraf", "npm:3.0.2"],
-            ["standard-version", "npm:9.3.0"],
+            ["standard-version", "npm:9.3.1"],
             ["ts-loader", "virtual:fa48734551895786c5a674eff027f01ce22cb1d17ef7de0eac7cae0497b38e7cf44e0b7535425ad4da95710abc24600610f239afeb810c2b891324d9ba84650b#npm:9.2.2"],
             ["typescript", "patch:typescript@npm%3A4.2.4#builtin<compat/typescript>::version=4.2.4&hash=a45b0e"],
             ["webpack", "virtual:fa48734551895786c5a674eff027f01ce22cb1d17ef7de0eac7cae0497b38e7cf44e0b7535425ad4da95710abc24600610f239afeb810c2b891324d9ba84650b#npm:5.38.1"],
@@ -2741,7 +2741,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["ejs", [
         ["npm:2.7.4", {
-          "packageLocation": "./.yarn/unplugged/ejs-npm-2.7.4-879ed38a4e/node_modules/ejs/",
+          "packageLocation": "./.yarn/cache/ejs-npm-2.7.4-879ed38a4e-f066d9a932.zip/node_modules/ejs/",
           "packageDependencies": [
             ["ejs", "npm:2.7.4"]
           ],
@@ -7149,7 +7149,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["npm-run-all", "npm:4.1.5"],
             ["prettier", "npm:2.3.0"],
             ["rimraf", "npm:3.0.2"],
-            ["standard-version", "npm:9.3.0"],
+            ["standard-version", "npm:9.3.1"],
             ["ts-loader", "virtual:fa48734551895786c5a674eff027f01ce22cb1d17ef7de0eac7cae0497b38e7cf44e0b7535425ad4da95710abc24600610f239afeb810c2b891324d9ba84650b#npm:9.2.2"],
             ["typescript", "patch:typescript@npm%3A4.2.4#builtin<compat/typescript>::version=4.2.4&hash=a45b0e"],
             ["webpack", "virtual:fa48734551895786c5a674eff027f01ce22cb1d17ef7de0eac7cae0497b38e7cf44e0b7535425ad4da95710abc24600610f239afeb810c2b891324d9ba84650b#npm:5.38.1"],
@@ -8301,10 +8301,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["standard-version", [
-        ["npm:9.3.0", {
-          "packageLocation": "./.yarn/cache/standard-version-npm-9.3.0-bf14ef87af-e56d3e5506.zip/node_modules/standard-version/",
+        ["npm:9.3.1", {
+          "packageLocation": "./.yarn/cache/standard-version-npm-9.3.1-79f6c7de68-ed79532134.zip/node_modules/standard-version/",
           "packageDependencies": [
-            ["standard-version", "npm:9.3.0"],
+            ["standard-version", "npm:9.3.1"],
             ["chalk", "npm:2.4.2"],
             ["conventional-changelog", "npm:3.1.24"],
             ["conventional-changelog-config-spec", "npm:2.1.0"],
