@@ -5,8 +5,7 @@ Pulse animation with Web Animations API inspired by [Pulsator](https://github.co
 
 ##  [Demo](https://shisama.github.io/Pulsator-JS/demo/)
 
-
-# Usage
+## Usage
 + Install
 `npm install pulsator --save`
 
@@ -15,10 +14,9 @@ Pulse animation with Web Animations API inspired by [Pulsator](https://github.co
   `import Pulsator from "pulsator"`
 
 + create Pulsator instance with arguments
-  * element: required. parent element of pulse element
-  * options: object for changing pulsator's style
+  * options: object for changing pulsator
   
-  `const pulsator = new Pulsator(element, options)`
+`const pulsator = new Pulsator(options)`
 
 example(below is a part of [Demo](https://shisama.github.io/Pulsator-JS/demo/))
 
@@ -73,27 +71,46 @@ window.addEventListener('keydown', e => {
 
 ```
 
-# API
-## start()
-start pulse animation
+## API
+### start()
+This starts pulse animation
 
-## stop()
-stop pulse animation
+### startByMouseEvent(e: MouseEvent)
+This starts pulse animation triggered by mouse event.
+This takes MouseEvent object as an argument.
 
-## pause()
-pause pulse animation
+### stop()
+This stops pulse animation
 
-## reverse()
-reverse pulse animation
+### pause()
+This s pulse animation
 
-## getElement()
-get pulse element
+### reverse()
+This reverses pulse animation
+
+### getElement()
+This returns the element of pulsator
+
+## Options
+
+```typescript
+export type Options = Partial<{
+  style: Partial<{
+    width: string | number; // default: 15px
+    height: string | number; // default: 15px
+  }>;
+  duration: number; // default: 1500
+  iterations: number; // default: Infinity
+  color: Partial<{
+    r: number; // default: 255
+    g: number; // default: 0
+    b: number; // default: 0
+  }>
+}>;
+```
 
 # Browser compatibility
-* Chrome 36
-* Firefox 48
-
 see [Web Animations API Browser compatibility](https://caniuse.com/web-animation)!
 
 # LICENSE
-This project is licensed under the terms of the MIT license
+This project is licensed under the terms of the [MIT license](./LICENSE).
