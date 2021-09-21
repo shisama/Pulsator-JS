@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.2.0](https://github.com/shisama/Pulsator-JS/compare/v2.0.4...v2.2.0) (2021-09-21)
+
+
+### Features
+
+* remove background style option ([05ecdf6](https://github.com/shisama/Pulsator-JS/commit/05ecdf684f11441f58658a47eb0441ce39727fa9))
+
 ## [2.1.0](https://github.com/shisama/Pulsator-JS/compare/v2.0.4...v2.1.0) (2021-09-21)
 
 
