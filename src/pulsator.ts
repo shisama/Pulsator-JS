@@ -22,15 +22,14 @@ export default class Pulsator {
       g: 0,
       b: 0,
     }, options?.color);
-    const style = Object.assign({
+    Object.assign(this.element.style, {
       display: "none",
-      width: "15px",
-      height: "15px",
+      width: options?.style?.width ?? "15px",
+      height: options?.style?.height ?? "15px",
       borderRadius: "50%",
       borderColor: `rgba(${color.r},${color.g},${color.b}, 1)`,
       background: `rgba(${color.r},${color.g},${color.b}, 1)`,
-    }, options?.style);
-    Object.assign(this.element.style, style);
+    });
 
     this.animation = this.element.animate(
       {
