@@ -1,6 +1,6 @@
-import Pulsator from "../src/pulsator";
+import Pulsator, {Options} from "../src/pulsator";
 
-const options = {
+const options: Options = {
   style: {
     width: "20px",
     height: "20px",
@@ -9,7 +9,9 @@ const options = {
     r: 244,
     g: 67,
     b: 54
-  }
+  },
+  duration: 1200,
+  iterations: 10,
 };
 
 const parent = document.querySelector(".demo-space");
