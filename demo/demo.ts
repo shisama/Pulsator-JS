@@ -4,7 +4,6 @@ const options = {
   style: {
     width: "20px",
     height: "20px",
-    borderColor: 'black'
   },
   color: {
     r: 244,
