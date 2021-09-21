@@ -7,8 +7,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint ./src/*.ts",
-    "build": "npm-run-all -s clean -p build:cjs build:demo",
-    "build:cjs": "tsc",
+    "build": "npm-run-all -s clean -p build:esm build:demo",
+    "build:esm": "tsc",
     "build:demo": "webpack",
     "clean": "rimraf lib",
     "dev": "webpack serve",
