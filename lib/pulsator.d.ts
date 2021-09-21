@@ -1,13 +1,16 @@
-declare type Options = {
-    style: Record<string, string>;
+export declare type Options = Partial<{
+    style: Partial<{
+        width: string | number;
+        height: string | number;
+    }>;
     duration: number;
     iterations: number;
-    color: {
+    color: Partial<{
         r: number;
         g: number;
         b: number;
-    };
-};
+    }>;
+}>;
 export default class Pulsator {
     private element;
     private animation;
@@ -17,5 +20,5 @@ export default class Pulsator {
     pause(): void;
     reverse(): void;
     getElement(): HTMLElement;
+    startByMouseEvent(e: MouseEvent): void;
 }
-export {};
