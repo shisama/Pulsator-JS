@@ -2,7 +2,7 @@ const path = require("path");
 
 module.exports = {
   mode: "production",
-  entry: "./demo/demo.js",
+  entry: "./demo/demo.ts",
   output: {
     path: path.resolve(__dirname, "demo"),
     filename: "demo.bundle.js"
@@ -28,4 +28,5 @@ module.exports = {
   resolve: {
     extensions: [".tsx", ".ts", ".js"],
   },
+  devtool: 'source-map'
 };
