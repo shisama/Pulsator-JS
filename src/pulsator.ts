@@ -2,7 +2,6 @@ export type Options = Partial<{
   style: Partial<{
     width: string | number;
     height: string | number;
-    background: string;
   }>;
   duration: number;
   iterations: number;
